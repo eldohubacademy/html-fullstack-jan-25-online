@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>HTML Forms</title>
+    <!-- link to css, scripts, meta tags(SEO) -->
+  </head>
+  <body>
+    <h1>HTML Forms</h1>
+    <form
+      action="https://eldohub.co.ke/login"
+      method="POST"
+      enctype="text/plain"
+    >
+      <!-- 
+        - action: the url for the server that the form data is submited to.
+        - method: the http method to be used when sending the data to the server.
+        - enctype: used when sending files(images, documents) - modify the encoding method for sending data
+        -->
+      <label for="username">Fill your username</label>
+      <input type="text" name="jina" id="username" /> <br />
+
+      <label for="email">Your email</label>
+      <input type="email" name="email" id="email" /> <br />
+
+      <label for="coverletter">Attach Cover Letter</label>
+      <input type="file" name="coverletter" id="coverletter" /> <br />
+
+      <input
+        type="password"
+        name="password"
+        id="password"
+        placeholder="Password"
+      />
+      <br />
+      <label for=""> Gender</label>
+
+      <input type="radio" name="gender" id="male" value="male" />
+      <label for="male">Male</label>
+
+      <input type="radio" name="gender" id="female" value="female" />
+      <label for="female">Female</label>
+
+      <br />
+      <label for="age">Age</label>
+      <input type="number" name="age" id="age" max="1000" />
+      <!-- checkbox, select(options), textarea, input:number, input:date, input:tel,... W3Schools   -->
+      <br />
+      <input type="submit" value="Send" />
+      <!--  
+        form elements attributes
+        - type: support input validation - ensuring that the user provide data in the correct format
+        - name: labeling data submitted to server ( jina: "albert kip", email: "jane@jdks.cn", gender: "female"  )
+        - id: uniquely identify an element in a html page. assign labels in input elements.
+        - for: used in labels to assign a label to an input element(matching their values)
+      -->
+    </form>
+
+    <!-- http - hypertext transfer protocol
+     methods --- Get, POST, PUT, PATCH, DELETE 
+     status codes -- 
+
+    -->
+  </body>
+</html>
